@@ -1,0 +1,61 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3vw;
+}
+.fotoPerfil {
+  max-width: 320px;
+  min-width: 20rem;
+  width: 30vw;
+}
+.title {
+  width: 100%;
+  text-align: center;
+  line-height: 100%;
+  font-size: 4rem;
+  color: var(--darker-blue);
+  white-space: nowrap;
+  font-weight: 900;
+}
+.text {
+  text-align: center;
+  line-height: 170%;
+  font-size: 1.5rem;
+  color: var(--darker-blue);
+}
+.redesSociais {
+  padding: 0.5rem 0 0 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+}
+.iconesRedesSociais {
+  font-size: 4.3rem;
+  color: var(--darker-blue);
+}
+.btnWhatsapp {
+  background-color: var(--darker-blue);
+  color: white;
+  border: none;
+  padding: 1rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 900px) {
+  .title,
+  .text {
+    text-align: left;
+  }
+
+  .banner {
+    flex-direction: row-reverse;
+  }
+  .redesSociais {
+    justify-content: left;
+  }
+}

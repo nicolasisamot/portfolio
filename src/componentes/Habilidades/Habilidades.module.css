@@ -1,0 +1,40 @@
+.habilidades {
+  margin: 0 auto;
+  max-width: 70rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.cardHabilidade {
+  color: var(--darker-blue);
+  background-color: white;
+  padding: 1rem 2rem;
+  min-width: 8rem;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.imgHabilidade {
+  width: 64px;
+  height: 64px;
+}
+.titleHabilidade {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 675px) {
+  .cardHabilidade {
+    min-width: 18rem;
+  }
+  .imgHabilidade {
+    width: 64px;
+    height: 64px;
+  }
+  .habilidades {
+    max-width: 80%;
+  }
+}

@@ -1,0 +1,43 @@
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+}
+.foto {
+  border-radius: 1rem;
+  width: 20vw;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.text {
+  line-height: 150%;
+  text-align: justify;
+  font-size: 2.5rem;
+  color: var(--darker-blue);
+  margin-bottom: 3rem;
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+  }
+  .foto {
+    max-width: 38rem;
+    width: 50vw;
+    margin-bottom: 3vh;
+  }
+
+  .text {
+    text-align: center;
+  }
+}

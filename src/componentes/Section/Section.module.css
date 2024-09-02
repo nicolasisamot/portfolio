@@ -1,0 +1,21 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10vh 0 10vh 0;
+}
+.title {
+  margin-bottom: 15vh;
+  text-align: center;
+  color: var(--darkest-blue);
+  font-size: clamp(5rem, 6vw, 6.4rem);
+  font-weight: 900;
+}
+
+.section:first-child {
+  margin-top: 6rem;
+}
+
+.section:last-child {
+  margin-bottom: 0;
+}

@@ -1,0 +1,24 @@
+.img {
+  width: 6.4rem;
+  filter: brightness(0) saturate(100%) invert(13%) sepia(35%) saturate(3000%)
+    hue-rotate(160deg) brightness(88%) contrast(95%);
+  margin-bottom: 0.5rem;
+}
+.cardContato {
+  text-align: center;
+}
+
+@media (min-width: 1000px) {
+  .img {
+    margin-bottom: 0;
+  }
+  .cardContato {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .title {
+    text-align: left;
+    font-size: 1.5rem;
+  }
+}

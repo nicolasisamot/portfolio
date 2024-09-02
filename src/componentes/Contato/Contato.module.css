@@ -1,0 +1,148 @@
+.contato {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+
+.form {
+  width: 100%;
+  max-width: 50rem;
+  margin: 0 auto;
+  color: var(--darker-blue);
+  background-color: white;
+  padding: 2rem 2rem 2rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.form > input,
+textarea {
+  font-size: 1.5rem;
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--lightest-gray);
+}
+textarea {
+  min-height: 10rem;
+}
+
+.form > button {
+  width: 100%;
+  padding: 1.5rem;
+  margin-top: -0.5rem;
+  font-size: 1.5rem;
+  background-color: var(--darker-blue);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.form > button:hover {
+  background-color: var(--dark-blue);
+  transform: scale(1.01);
+  transition: all 0.2s ease-in-out;
+}
+
+.form > label {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.listaContato {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.formEnviado {
+  display: none;
+  position: fixed;
+  padding: 4rem;
+  top: 50%;
+  left: 50%;
+  max-width: 80%;
+  max-height: 80%;
+  width: 50rem;
+  height: 25rem;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  border-radius: 1rem;
+  font-size: 3rem;
+  transform: translate(-50%, -50%);
+  background-color: white;
+}
+
+.open {
+  display: flex;
+  transform: translate(-50%, -50%) scale(1);
+  animation: zoomIn 0.5s ease-out forwards;
+}
+
+.close {
+  animation: zoomOut 0.5s ease-out forwards;
+}
+.text {
+  font-size: 10vw;
+}
+@media screen and (min-width: 500px) {
+  .text {
+    font-size: 3rem;
+  }
+  .listaContato {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1000px) {
+  .contato {
+    flex-direction: row;
+    gap: 3rem;
+  }
+  .form {
+    margin: 0 0 0 0;
+  }
+  .listaContato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 2rem;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomOut {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0;
+  }
+}

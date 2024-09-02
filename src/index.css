@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --lightest-gray: #a3bac0; /* Cor mais clara para fundos e áreas de destaque sutis */
+  --light-gray: #768f96; /* Cor para fundos de seções ou elementos secundários */
+  --light-blue: #a0dceb; /* Cor para destaques e elementos interativos como links e botões */
+  --dark-blue: #42636b; /* Cor para cabeçalhos e elementos importantes */
+  --darker-blue: #1d3a41; /* Cor para texto principal e detalhes marcantes */
+  --darkest-blue: #072e38; /* Cor para fundos de rodapés e seções de destaque */
+  --cor-fundo: #f7f8f8; /* Cor para destaques e elementos interativos como links e botões */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--cor-fundo);
+  font-family: "Roboto", sans-serif;
+}
