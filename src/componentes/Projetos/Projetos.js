@@ -17,9 +17,9 @@ export default function Projetos() {
             <div className={styles.infoProjeto}>
               <h3 className={styles.titleProjeto}>Sistema de Monitoria</h3>
               <p className={styles.textProjeto}>
-                Projeto pessoal em desenvolvimento: Sistema de monitoria de
-                ligações de call center, permitindo a entrada de monitores para
-                aplicar feedbacks e operadores para visualizar seu desempenho.
+                Projeto pessoal: Sistema de monitoria de ligações de call
+                center, permitindo a entrada de monitores para aplicar feedbacks
+                e operadores para visualizar seu desempenho.
               </p>
             </div>
           </a>
@@ -35,6 +35,23 @@ export default function Projetos() {
               <p className={styles.textProjeto}>
                 Página única desenvolvida com o objetivo apresentar os serviços
                 oferecidos e facilitar o contato com a oficina mecânica.
+              </p>
+            </div>
+          </a>
+        </li>
+        <li className={styles.cardProjeto}>
+          <a
+            href="https://github.com/nicolasisamot/chat-tempo-real-backend"
+            target="_blank"
+          >
+            <img
+              className={styles.imgProjeto}
+              src="./images/projeto-chat.png"
+            ></img>
+            <div className={styles.infoProjeto}>
+              <h3 className={styles.titleProjeto}>Chat Online</h3>
+              <p className={styles.textProjeto}>
+                Projeto em desenvolvimento de um chat online.
               </p>
             </div>
           </a>
