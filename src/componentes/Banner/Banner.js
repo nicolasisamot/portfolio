@@ -15,7 +15,7 @@ export default function Banner() {
         <div>
           <h1 className={styles.title}>Olá, sou o</h1>
           <h1 className={styles.title}>Nicolas Tomasi</h1>
-          <p className={styles.text}>Desenvolvedor Back-End</p>
+          <p className={styles.text}>Desenvolvedor Full Stack</p>
           <ul className={styles.redesSociais}>
             <li>
               <a href="https://github.com/nicolasisamot" target="_blank">
